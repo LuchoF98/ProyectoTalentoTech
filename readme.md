@@ -1,0 +1,1 @@
+El proyecto se trata de un e-Commerce sobre venta de accesorios para mascotas.
