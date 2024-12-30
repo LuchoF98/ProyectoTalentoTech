@@ -7,6 +7,7 @@
     --negro: #000000;
     --blanco: #f7f7f7;
     --violetaClaro: #f1b7fd;
+    --gris: #5e5e5e9a;
 }
 
 html {
@@ -95,8 +96,11 @@ header {
 }
 
 .icono-carrito {
-    width: 2.5rem; 
-    height: auto;
+    background-color: var(--violeta);    
+}
+
+.icono-carrito:hover {
+    background-color: var(--violetaClaro);
 }
 
 .enlace__derecha:hover {
@@ -177,7 +181,7 @@ header {
     font-size: 1.5rem;
 }
 
-.boton {
+.addToCart {
     background-color: var(--violetaClaro);    
     display: block;
     margin-bottom: 2rem;
@@ -289,3 +293,69 @@ header {
     font-family: var(--fuenteParrafos);
     font-size: 1.5rem;
 }
+
+/* Estilos modal carrito */ 
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+  
+  .modal-content {
+    overflow: auto;
+    font-family: var(--fuenteParrafos);
+    font-size: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: var(--violetaClaro);
+    border-width: 5px;
+    text-align: left;
+    width: 600px;
+    height: 300px;        
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .botonComprar {    
+    background-color: var(--violetaClaro);    
+    display: flex;
+    align-items: end;
+    margin-bottom: 2rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 11rem;
+    height: 4rem;
+    border-radius: 1rem;
+  }
+
+  .botonLimpiar {
+    background-color: var(--gris);    
+    display: flex;
+    align-items: end;
+    margin-bottom: 2rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 11rem;
+    height: 4rem;
+    border-radius: 1rem;
+  }

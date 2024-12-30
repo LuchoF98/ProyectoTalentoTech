@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Paradise</title>    
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+    <header>       
+
+        <div class="navegacion__contenedor">
+            <ul class="navegacion">
+                <a href="../index.html" class="navegacion__enlace">Inicio</a>
+                <a href="./perros.html" class="navegacion__enlace">Perros</a>
+                <a href="#" class="navegacion__enlace">Gatos</a>
+                <a href="./aves-roedores.html" class="navegacion__enlace">Aves y Roedores</a>                                   
+            </ul>  
+        </div>
+        
+        <div class="logo__contenedor">
+            <a href="../index.html">
+                <h1>Paw Paradise</h1>
+                <img src="../img/logo-pag.png" alt="Logo de la pagina" class="logo__img">
+            </a>
+        </div>
+        
+    
+        <div class="enlaces__derecha">
+            <a href="./contacto.html" class="enlace__derecha">Contacto</a>            
+            <a href="#" class="enlace__carrito">
+                <button id="cartButton" class="icono-carrito" ><img src="../img/carrito.png">(<span id="cartCount">0</span>)</button>
+            </a>
+        </div>
+        
+    </header>
+    
+    <section class="banner-perro-gato"></section>
+
+    <main>        
+            <h2 class="titulo-contenido">Comederos y Bebederos</h2>
+
+            <div class="contenedor__productos">
+                <section class="producto">
+                    <div id="card" class="producto__mascota">
+                        <a href="#">                            
+                            <img src="../img/bebedero-automatico-gato.png" alt="imagen bebedero para gato" class="imagen-producto">
+                        </a>
+                        <p id="tituloProducto" class="nombre__producto">Fuente bebedero automatico para gatos</p>
+                        <p id="precioProducto" class="precio__producto">$80.000</p>
+                        <button class="addToCart" data-name="Fuente bebedero automatico para gato" data-price="80000" data-image="../img/bebedero-automatico-gato.png">Agregar al carrito</button>
+                    </div>
+                </section>
+                <section class="producto">
+                    <div id="card" class="producto__mascota">
+                        <a href="#">
+                            <img src="../img/comedero-bebedero-gato.png" alt="imagen comedero y bebedero para gato" class="imagen-producto">
+                        </a>
+                        <p id="tituloProducto" class="nombre__producto">Comedero y Bebedero acero inoxidable para gatos</p>
+                        <p id="precioProducto" class="precio__producto">$45.000</p>
+                        <button class="addToCart" data-name="Comedero y Bebedero acero inoxidable para gatos" data-price="45000" data-image="../img/comedero-bebedero-gato.png">Agregar al carrito</button>
+                    </div>
+                </section>
+                <section class="producto">
+                    <div id="card" class="producto__mascota">
+                        <a href="#">
+                            <img src="../img/comedero-gato.png" alt="imagen comedero para gato" class="imagen-producto">
+                        </a>
+                        <p id="tituloProducto" class="nombre__producto">Plato comedero/bebedero para gato</p>
+                        <p id="precioProducto" class="precio__producto">$6.000</p>
+                        <button class="addToCart" data-name="Plato comedero/bebedero para gato" data-price="6000" data-image="../img/comedero-gato.png">Agregar al carrito</button>
+                    </div>
+                </section>
+                <section class="producto">
+                    <div id="card" class="producto__mascota">
+                        <a href="#">
+                            <img src="../img/comedero-automatico-wifi.png" alt="imagen comedero para gato" class="imagen-producto">
+                        </a>
+                        <p id="tituloProducto" class="nombre__producto">Comedero dispenser automatico-WiFi con camara y audio</p>
+                        <p id="precioProducto" class="precio__producto">$90.000</p>
+                        <button class="addToCart" data-name="Comedero dispenser automatico-WiFi con camara y audio" data-price="90000" data-image="../img/comedero-automatico-wifi.png">Agregar al carrito</button>
+                    </div>
+                </section>
+            </div>              
+
+            
+            <h2 class="titulo-contenido">Casas y Juguetes</h2>
+
+            <div class="contenedor__productos">
+                <section class="producto">
+                    <div id="card" class="producto__mascota">
+                        <a href="#">                            
+                            <img src="../img/casa-doble-gato.png" alt="imagen casa para gato" class="imagen-producto">
+                        </a>
+                        <p id="tituloProducto" class="nombre__producto">Casa dos pisos para gatos</p>
+                        <p id="precioProducto" class="precio__producto">$55.000</p>
+                        <button class="addToCart" data-name="Casa dos pisos para gatos" data-price="55000" data-image="../img/casa-doble-gato.png">Agregar al carrito</button>
+                    </div>
+                </section>
+                <section class="producto">
+                    <div id="card" class="producto__mascota">
+                        <a href="#">
+                            <img src="../img/casita-gato.png" alt="imagen casa para gato" class="imagen-producto">
+                        </a>
+                        <p id="tituloProducto" class="nombre__producto">Castillo multiplataforma con juguete</p>
+                        <p id="precioProducto" class="precio__producto">$50.000</p>
+                        <button class="addToCart" data-name="Comedero para perro "Woof"" data-price="50000" data-image="../img/casita-gato.png">Agregar al carrito</button>
+                    </div>
+                </section>
+                <section class="producto">
+                    <div id="card" class="producto__mascota">
+                        <a href="#">
+                            <img src="../img/juguete-gato.png" alt="imagen juguete para gato" class="imagen-producto">
+                        </a>
+                        <p id="tituloProducto" class="nombre__producto">Torre caza la bola kitties</p>
+                        <p id="precioProducto" class="precio__producto">$10.000</p>
+                        <button class="addToCart" data-name="Torre caza la bola kitties" data-price="10000" data-image="../img/juguete-gato.png">Agregar al carrito</button>
+                    </div>
+                </section>
+                <section class="producto">
+                    <div id="card" class="producto__mascota">
+                        <a href="#">
+                            <img src="../img/torre-rascador.png" alt="imagen juguete para gato" class="imagen-producto">
+                        </a>
+                        <p id="tituloProducto" class="nombre__producto">Torre rascador c/ juguete para gato</p>
+                        <p id="precioProducto" class="precio__producto">$15.000</p>
+                        <button class="addToCart" data-name="Torre rascador c/ juguete para gato" data-price="15000" data-image="../img/torre-rascador.png">Agregar al carrito</button> 
+                    </div>
+                </section>
+            </div>       
+    </main>    
+
+    <!-- Modal carrito de compras -->
+    <div id="cartModal" class="modal hidden">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>Tu Carrito</h2>
+          <ul id="cartItems"></ul>
+          <p>Total: $<span id="cartTotal">0</span></p>
+          <button id="botonComprar" class="botonComprar">Finalizar</button>
+          <button id="removeFromCart" class="botonLimpiar">Limpiar</button>
+        </div>
+      </div>
+
+    <footer class="footer">
+        <div class="contenedor__footer">
+            
+            <a href="../index.html">
+                <h2>Paw Paradise</h2>
+                <img src="../img/logo-pag.png" alt="Logo de la pagina" class="logo__img">
+            </a>
+    
+            
+            <div class="enlaces">
+                <p class="titulo__enlaces">Contactanos</p>                
+                <a href="./contacto.html" class="navegacion__enlace">Contacto</a>
+            </div>
+    
+            
+            <div class="enlaces__footer">
+                <p class="titulo__redes">Redes Sociales</p>
+                <a href="https://www.instagram.com/luchoo.f/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path> <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path> <path d="M16.5 7.5l0 .01"></path> </svg></a>
+                <a href="https://www.facebook.com/luchoo.nardelli?locale=es_LA"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path> </svg></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

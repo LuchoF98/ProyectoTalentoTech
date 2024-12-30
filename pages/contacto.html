@@ -6,35 +6,32 @@
     <title>Paw Paradise</title>    
     <link rel="stylesheet" href="../style/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Hammersmith+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
 </head>
 <body>
     <header>       
 
         <div class="navegacion__contenedor">
             <ul class="navegacion">
-                <a href="./index.html" class="navegacion__enlace">Inicio</a>
-                <a href="#" class="navegacion__enlace">Perros</a>
-                <a href="#" class="navegacion__enlace">Gatos</a>
-                <a href="#" class="navegacion__enlace">Aves</a>
-                <a href="#" class="navegacion__enlace">Roedores</a>                   
+                <a href="../index.html" class="navegacion__enlace">Inicio</a>
+                <a href="./perros.html" class="navegacion__enlace">Perros</a>
+                <a href="./gatos.html" class="navegacion__enlace">Gatos</a>
+                <a href="./aves-roedores.html" class="navegacion__enlace">Aves y Roedores</a>                                
             </ul>  
         </div>
         
         <div class="logo__contenedor">
-            <a href="index.html">
+            <a href="../index.html">
                 <h1>Paw Paradise</h1>
-                <img src="./img/logo-pag.png" alt="Logo de la pagina" class="logo__img">
+                <img src="../img/logo-pag.png" alt="Logo de la pagina" class="logo__img">
             </a>
         </div>
         
     
         <div class="enlaces__derecha">
-            <a href="./contacto.html" class="enlace__derecha">Contacto</a>
-            <a href="#" class="enlace__derecha">Nosotros</a>
-            <a href="#" class="enlace__carrito">
-                <img src="./img/carrito.png" alt="Carrito de compras" class="icono-carrito">
+            <a href="#" class="enlace__derecha">Contacto</a>         
+                <button id="cartButton" class="icono-carrito" ><img src="../img/carrito.png">(<span id="cartCount">0</span>)</button>   
             </a>
         </div>
         
@@ -74,7 +71,18 @@
         </div>
 
     </section>  
-    
+
+    <!-- Modal carrito de compras -->
+    <div id="cartModal" class="modal hidden">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>Tu Carrito</h2>
+          <ul id="cartItems"></ul>
+          <p>Total: $<span id="cartTotal">0</span></p>
+          <button id="botonComprar" class="botonComprar">Finalizar</button>
+          <button id="removeFromCart" class="botonLimpiar">Limpiar</button>
+        </div>
+      </div>
     
 
     <footer class="footer">
@@ -82,13 +90,12 @@
             
             <a href="index.html">
                 <h2>Paw Paradise</h2>
-                <img src="./img/logo-pag.png" alt="Logo de la pagina" class="logo__img">
+                <img src="../img/logo-pag.png" alt="Logo de la pagina" class="logo__img">
             </a>
     
             
             <div class="enlaces">
-                <p class="titulo__enlaces">Enlaces Utiles</p>
-                <a href="#" class="navegacion__enlace">Nosotros</a>
+                <p class="titulo__enlaces">Contactanos</p>                
                 <a href="#" class="navegacion__enlace">Contacto</a>
             </div>
     
@@ -101,5 +108,7 @@
         </div>
     </footer>
     
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
